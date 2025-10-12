@@ -1,1 +1,60 @@
+/* Base */
+body { background-color: #ffffff; color: #0b0d12; }
+
+/* NAV */
+.navbar { box-shadow: 0 0.5rem 1rem rgba(0,0,0,.15); }
+.navbar .navbar-brand { font-size: 1.25rem; letter-spacing: .02em; }
+
+/* HERO */
+.hero-wrapper { min-height: 62vh; }
+.hero-img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1400px;
+  height: auto;
+  max-height: 65vh;
+  object-fit: contain;
+  background: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0 1rem 3rem rgba(0,0,0,.10);
+}
+
+/* STORE BUTTONS (200 x 59.29, uniform) */
+.store-card {
+  background: #f8f9fa;
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 12px;
+  padding: 0;
+  transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+  display: block;
+  width: 200px;
+  height: 59.29px; /* exact size */
+  overflow: hidden;
+}
+.store-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2.5rem rgba(0,0,0,.35);
+  border-color: rgba(0,0,0,0.18);
+}
+.store-badge {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* fills the button area */
+  display: block;
+}
+
+/* Utilities */
+.spacer { height: 24px; }
+
+/* Small screens: scale buttons down proportionally, keep aspect ratio */
+@media (max-width: 576px) {
+  .hero-wrapper { min-height: 50vh; }
+  .hero-img { max-height: 50vh; border-radius: .75rem; }
+  .store-card {
+    width: 70vw;
+    max-width: 200px;
+    height: calc(70vw * (59.29 / 200));
+  }
+}
 
