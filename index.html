@@ -1,3 +1,8 @@
+Here is the updated `index.html` file with your provided images integrated. I have replaced the hero banner with "Untitled design.jpg" and added "Biggart Tech Team Group Photo.png" to the About Us section to showcase your team.
+
+### `index.html`
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -41,12 +46,12 @@
   <main class="container py-5 hero-wrapper text-center">
     <h1 class="display-5 fw-bold mb-3">Innovating Your Digital Future</h1>
     <p class="lead text-muted mb-4">Powerful, scalable tech solutions right at your fingertips.</p>
-    <!-- Replace the src below with your new banner image URL or a local filename -->
+    
+    <!-- Banner Image -->
     <img
-      src="BTS-hero-banner.png"
+      src="Untitled design.jpg"
       alt="Biggart Tech Solutions banner"
       class="hero-img mb-5"
-      onerror="this.onerror=null; this.src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQAAAAABCAYAAABl0Vt4AAAACXBIWXMAAAsSAAALEgHS3X78AAAADUlEQVQImWP4z8DAwMAgAAE3AQk4VfPzAAAAAElFTkSuQmCC';"
     />
 
     <!-- STORE BUTTONS -->
@@ -104,9 +109,12 @@
   <section id="about" class="container py-5">
     <div class="row align-items-center py-4">
       <div class="col-md-6 mb-4 mb-md-0">
-        <div class="bg-light rounded-3 p-5 text-center h-100 d-flex align-items-center justify-content-center">
-          <i class="bi bi-laptop text-secondary" style="font-size: 6rem;"></i>
-        </div>
+        <!-- Team Photo -->
+        <img 
+          src="Biggart Tech Team Group Photo.png" 
+          alt="Biggart Tech Team" 
+          class="img-fluid rounded-3 shadow" 
+        />
       </div>
       <div class="col-md-6 px-md-5">
         <h2 class="fw-bold mb-4">About Biggart Tech Solutions</h2>
@@ -158,3 +166,5 @@
   <script defer src="app.js"></script>
 </body>
 </html>
+
+```
