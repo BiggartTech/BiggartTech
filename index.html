@@ -7,49 +7,154 @@
 
   <!-- Bootstrap 5 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
   <!-- Site CSS -->
   <link href="style.css" rel="stylesheet" />
 </head>
 <body>
   <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
-    <div class="container-fluid justify-content-center">
-      <a class="navbar-brand fw-bold text-center" href="#">Biggart Tech Solutions</a>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Biggart Tech Solutions</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#features">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </nav>
 
   <!-- HERO -->
-  <main class="container py-4 hero-wrapper">
+  <main class="container py-5 hero-wrapper text-center">
+    <h1 class="display-5 fw-bold mb-3">Innovating Your Digital Future</h1>
+    <p class="lead text-muted mb-4">Powerful, scalable tech solutions right at your fingertips.</p>
     <!-- Replace the src below with your new banner image URL or a local filename -->
     <img
       src="BTS-hero-banner.png"
       alt="Biggart Tech Solutions banner"
-      class="hero-img"
+      class="hero-img mb-5"
       onerror="this.onerror=null; this.src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQAAAAABCAYAAABl0Vt4AAAACXBIWXMAAAsSAAALEgHS3X78AAAADUlEQVQImWP4z8DAwMAgAAE3AQk4VfPzAAAAAElFTkSuQmCC';"
     />
-  </main>
 
-  <!-- STORE BUTTONS -->
-  <section class="container pb-5">
-    <div class="row g-3 align-items-stretch">
-      <div class="col-12 col-md-6 d-flex justify-content-center">
+    <!-- STORE BUTTONS -->
+    <div class="row g-3 justify-content-center pb-5">
+      <div class="col-12 col-sm-auto d-flex justify-content-center">
         <a class="store-card text-decoration-none" href="#" target="_blank" rel="noopener" id="appleLink" aria-label="Download on the App Store">
           <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" />
         </a>
       </div>
-
-      <div class="col-12 col-md-6 d-flex justify-content-center">
+      <div class="col-12 col-sm-auto d-flex justify-content-center">
         <a class="store-card text-decoration-none" href="#" target="_blank" rel="noopener" id="googleLink" aria-label="Get it on Google Play">
           <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play" />
         </a>
       </div>
     </div>
+  </main>
+
+  <!-- FEATURES SECTION -->
+  <section id="features" class="bg-light py-5">
+    <div class="container py-4">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold">Why Choose Biggart?</h2>
+        <p class="text-muted">Built for performance, designed for you.</p>
+      </div>
+      <div class="row g-4">
+        <!-- Feature 1 -->
+        <div class="col-md-4">
+          <div class="feature-card text-center bg-white h-100">
+            <i class="bi bi-cloud-arrow-up feature-icon"></i>
+            <h4 class="fw-bold mt-3">Cloud Integration</h4>
+            <p class="text-muted">Seamlessly sync your data across all devices with our lightning-fast, secure cloud infrastructure.</p>
+          </div>
+        </div>
+        <!-- Feature 2 -->
+        <div class="col-md-4">
+          <div class="feature-card text-center bg-white h-100">
+            <i class="bi bi-shield-check feature-icon"></i>
+            <h4 class="fw-bold mt-3">Enterprise Security</h4>
+            <p class="text-muted">Bank-grade encryption ensures your sensitive business data stays protected 24/7.</p>
+          </div>
+        </div>
+        <!-- Feature 3 -->
+        <div class="col-md-4">
+          <div class="feature-card text-center bg-white h-100">
+            <i class="bi bi-speedometer2 feature-icon"></i>
+            <h4 class="fw-bold mt-3">High Performance</h4>
+            <p class="text-muted">Optimized code and streamlined processes mean zero lag, no matter how heavy the workload.</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="container py-5">
+    <div class="row align-items-center py-4">
+      <div class="col-md-6 mb-4 mb-md-0">
+        <div class="bg-light rounded-3 p-5 text-center h-100 d-flex align-items-center justify-content-center">
+          <i class="bi bi-laptop text-secondary" style="font-size: 6rem;"></i>
+        </div>
+      </div>
+      <div class="col-md-6 px-md-5">
+        <h2 class="fw-bold mb-4">About Biggart Tech Solutions</h2>
+        <p class="text-muted mb-4">We are a forward-thinking technology company dedicated to building applications that make a difference. From intuitive user interfaces to robust backend architectures, we craft digital experiences that empower businesses and individuals alike.</p>
+        <p class="text-muted">Founded on the principles of innovation and reliability, our mission is to simplify the complex world of technology into accessible, scalable tools for your everyday success.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="contact" class="bg-dark text-white py-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-6">
+          <h4 class="fw-bold mb-3">Biggart Tech Solutions</h4>
+          <p class="text-secondary">Innovating your digital future, one line of code at a time.</p>
+        </div>
+        <div class="col-md-3">
+          <h5 class="mb-3">Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="#features" class="footer-link">Features</a></li>
+            <li><a href="#about" class="footer-link">About Us</a></li>
+            <li><a href="#" class="footer-link">Privacy Policy</a></li>
+            <li><a href="#" class="footer-link">Terms of Service</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5 class="mb-3">Contact Us</h5>
+          <ul class="list-unstyled text-secondary">
+            <li><i class="bi bi-envelope me-2"></i> hello@biggarttech.com</li>
+            <li><i class="bi bi-telephone me-2"></i> 1 (800) 555-0199</li>
+            <li class="mt-3">
+              <a href="#" class="text-white me-3 fs-5"><i class="bi bi-twitter-x"></i></a>
+              <a href="#" class="text-white me-3 fs-5"><i class="bi bi-linkedin"></i></a>
+              <a href="#" class="text-white fs-5"><i class="bi bi-github"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <hr class="border-secondary mt-4 mb-3">
+      <div class="text-center text-secondary small">
+        &copy; <span id="currentYear"></span> Biggart Tech Solutions. All rights reserved.
+      </div>
+    </div>
+  </footer>
 
   <!-- Bootstrap + App JS -->
   <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script defer src="app.js"></script>
 </body>
 </html>
-
